@@ -8,7 +8,7 @@ app = FastAPI()
 
 @app.get('/')
 def func():
-    return {"Hello": "World"}
+    return {"Hello": "Everyone"}
 
 
 app.mount('/graphql', GraphQLApp(schema=schema, on_get=make_graphiql_handler()))
